@@ -1,1 +1,4 @@
-let nombreLogin = prompt ("Ingrese nombre de usuario")
+for (let i = 10; i > 0 ; i--) {
+    console.warn("TheFinalCountDown", i);
+    
+}
