@@ -17,7 +17,7 @@ class Combo {
       this.articulo  = articulo.toUpperCase();
       this.precio  = parseFloat(precio);
       this.tiempo = parseFloat(tiempo)
-      costoAlquiler() => this.precio * this.tiempo;
+     let costoAlquiler = (costo) => this.precio * this.tiempo;
    }
       
   
