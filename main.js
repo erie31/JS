@@ -1,6 +1,15 @@
-const bochinchito = ["Chico", 500]
-const bochinche = ["Grance", 600]
-const bochincheXl =["Gigante",800]
+class Inflables {
+   constructor(nombre, tamaño, precio){
+      this.nombre = nombre;
+      this.tamaño = tamaño;
+      this.precio = precio;
+   }
+
+}
+const bochinchito = new Inflables ("Bochinchito", "Chico", 500)
+const bochinche = new Inflables ("Bochinche", "Grande", 600)
+const bochincheXl = new Inflables ("BochincheXl", "Gigante", 800)
+
 const articulo = prompt ("Ingresa el articulo deseado")
 let tiempo = prompt ("Ingresa la cantidad de dias de alquiler")
 class Combo {
@@ -8,10 +17,10 @@ class Combo {
       this.articulo  = articulo.toUpperCase();
       this.precio  = parseFloat(precio);
       this.tiempo = parseFloat(tiempo)
-  }
-  costoAlquiler() {
-      this.precio = this.precio * this.tiempo;
-  }
+      costoAlquiler() => this.precio * this.tiempo;
+   }
+      
+  
 }
 
    
